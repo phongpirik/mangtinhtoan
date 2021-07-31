@@ -1,0 +1,277 @@
+.full {
+    @include span-columns(12);
+}
+
+.half {
+    @include span-columns(6);
+    @include media($mb-pt) {
+        @include span-columns(12);
+    }
+}
+
+.one-third {
+    @include span-columns(4);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.two-thirds {
+    @include span-columns(8);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.one-quarter {
+    @include span-columns(3);
+    @include media($sm) {
+        @include span-columns(6);
+    }
+    @include media($mb-ls) {
+        @include span-columns(12);
+    }
+}
+
+.one-sixth {
+    @include span-columns(2);
+    @include media($sm) {
+        @include span-columns(4);
+    }
+    @include media($xs) {
+        @include span-columns(12);
+    }
+}
+
+.three-quarters {
+    @include span-columns(9);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.one-fifth {
+    @include span-columns(2 of 10);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.four-fifths {
+    @include span-columns(8 of 10);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.two-fifths {
+    @include span-columns(4 of 10);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.three-fifths {
+    @include span-columns(6 of 10);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-half {
+    @include span-columns(6);
+    @include pad(0 10px);
+    @include media($xs) {
+        @include span-columns(12);
+    }
+}
+
+.col-one-third {
+    @include span-columns(4);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-two-thirds {
+    @include span-columns(8);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-one-quarter {
+    @include span-columns(3);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(6);
+    }
+    @include media($mb-ls) {
+        @include span-columns(12);
+    }
+}
+
+.col-one-sixth {
+    @include span-columns(2);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(4);
+    }
+    @include media($xs) {
+        @include span-columns(12);
+    }
+}
+
+.col-three-quarters {
+    @include span-columns(9);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-one-fifth {
+    @include span-columns(2 of 10);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-two-fifths {
+    @include span-columns(4 of 10);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-three-fifths {
+    @include span-columns(6 of 10);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.col-four-fifths {
+    @include span-columns(8 of 10);
+    @include pad(0 10px);
+    @include media($sm) {
+        @include span-columns(12);
+    }
+}
+
+.container,
+.container-fluid {
+    @include outer-container;
+    @include pad(0 15px);
+    .full-width {
+        @include span-columns(12);
+        @include pad(0 15px);
+    }
+    .half {
+        @include pad(0 15px);
+    }
+    .one-third {
+        @include pad(0 15px);
+    }
+    .two-thirds {
+        @include pad(0 15px);
+    }
+    .one-quarter {
+        @include pad(0 15px);
+    }
+    .three-quarters {
+        @include pad(0 15px);
+    }
+    .one-fifth {
+        @include pad(0 15px);
+    }
+    .four-fifths {
+        @include pad(0 15px);
+    }
+    .two-fifths {
+        @include pad(0 15px);
+    }
+    .three-fifths {
+        @include pad(0 15px);
+    }
+}
+
+.container {
+    @include media($md) {
+        max-width: 1020px;
+    }
+    @include media($sm) {
+        max-width: 710px;
+    }
+}
+
+.container-fluid {
+    @include outer-container(100%);
+}
+
+.row {
+    @include row();
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.col-row {
+    @include row();
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.section {
+    @include outer-container;
+    @include pad(0 15px);
+    @include media($md) {
+        max-width: 1020px;
+    }
+    @include media($sm) {
+        max-width: 710px;
+    }
+    margin-bottom: 45px;
+    &.post-section {
+        padding-top: 40px;
+    }
+    .content {
+        @include span-columns(8);
+        @include pad(0 15px);
+        @include media($sm) {
+            @include span-columns(12);
+        }
+    }
+    .content-sm {
+        @include span-columns(6.1537);
+        @include pad(0 15px);
+        @include media($sm) {
+            @include span-columns(12);
+        }
+    }
+    .side-bar {
+        @include span-columns(4);
+        @include pad(0 15px);
+        @include media($sm) {
+            display: none;
+        }
+    }
+    .side-bar-md {
+        @include span-columns(3.1795);
+        @include pad(0 15px);
+        @include media($sm) {
+            display: none;
+        }
+    }
+    .side-bar-sm {
+        @include span-columns(2.6668);
+        @include pad(0 15px);
+        @include media($sm) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,185 @@
+{
+  "rules": [
+    {
+      "idx": 1,
+      "name": "định lý cosin a^2 = b^2 + c^2 - 2.b.c.cosA",
+      "concepts": [
+        "a",
+        "b",
+        "c",
+        "cosA"
+      ],
+      "expression": "b*b + c*c - a*a - 2*b*c*cosA"
+    },
+    {
+      "idx": 2,
+      "name": "định lý cosin b^2 = a^2 + c^2 - 2.a.c.cosB",
+      "concepts": [
+        "a",
+        "b",
+        "c",
+        "cosB"
+      ],
+      "expression": "a*a + c*c - b*b - 2*a*c*cosB"
+    },
+    {
+      "idx": 3,
+      "name": "định lý cosin c^2 = a^2 + b^2 - 2.a.b.cosC",
+      "concepts": [
+        "a",
+        "b",
+        "c",
+        "cosC"
+      ],
+      "expression": "a*a + b*b - c*c - 2*a*b*cosC"
+    },
+    {
+      "idx": 4,
+      "name": "định lý sin a/sinA = 2.R",
+      "concepts": [
+        "a",
+        "sinA",
+        "R"
+      ],
+      "expression": "a - 2*R*sinA"
+    },
+    {
+      "idx": 5,
+      "name": "định lý sin b/sinB = 2.R",
+      "concepts": [
+        "b",
+        "sinB",
+        "R"
+      ],
+      "expression": "b - 2*R*sinB"
+    },
+    {
+      "idx": 6,
+      "name": "định lý sin c/sinC = 2.R",
+      "concepts": [
+        "c",
+        "sinC",
+        "R"
+      ],
+      "expression": "c - 2*R*sinC"
+    },
+    {
+      "idx": 7,
+      "name": "công thức tính diện tích theo đường cao S = a.ha/2",
+      "concepts": [
+        "a",
+        "ha",
+        "Area"
+      ],
+      "expression": "a*ha - 2*Area"
+    },
+    {
+      "idx": 8,
+      "name": "công thức tính diện tích theo đường cao S = b.hb/2",
+      "concepts": [
+        "b",
+        "hb",
+        "Area"
+      ],
+      "expression": "b*hb - 2*Area"
+    },
+    {
+      "idx": 9,
+      "name": "công thức tính diện tích theo đường cao S = c.hc/2",
+      "concepts": [
+        "c",
+        "hc",
+        "Area"
+      ],
+      "expression": "c*hc - 2*Area"
+    },
+    {
+      "idx": 10,
+      "name": "công thức tính diện tích theo cạnh và góc S = a.b.sinC/2",
+      "concepts": [
+        "a",
+        "b",
+        "sinC",
+        "Area"
+      ],
+      "expression": "a*b*sinC - 2*Area"
+    },
+    {
+      "idx": 11,
+      "name": "công thức tính diện tích theo cạnh và góc S = a.c.sinB/2",
+      "concepts": [
+        "a",
+        "c",
+        "sinB",
+        "Area"
+      ],
+      "expression": "a*c*sinB - 2*Area"
+    },
+    {
+      "idx": 12,
+      "name": "công thức tính diện tích theo cạnh và góc S = b.c.sinA/2",
+      "concepts": [
+        "b",
+        "c",
+        "sinA",
+        "Area"
+      ],
+      "expression": "b*c*sinA - 2*Area"
+    },
+    {
+      "idx": 13,
+      "name": "công thức Heron S^2 = p(p-a)(p-b)(p-c)",
+      "concepts": [
+        "a",
+        "b",
+        "c",
+        "p",
+        "Area"
+      ],
+      "expression": "p*(p-a)*(p-b)*(p-c) - Area*Area"
+    },
+    {
+      "idx": 14,
+      "name": "công thức tính bán kính đường tròn ngoại tiếp R = a.b.c/(4.S)",
+      "concepts": [
+        "a",
+        "b",
+        "c",
+        "R",
+        "Area"
+      ],
+      "expression": "a*b*c - 4*Area*R"
+    },
+    {
+      "idx": 14,
+      "name": "công thức tính bán kính đường tròn nội tiếp r = S/p",
+      "concepts": [
+        "r",
+        "p",
+        "Area"
+      ],
+      "expression": "r*p - Area"
+    },
+    {
+      "idx": 15,
+      "name": "công thức tính nửa chu vi p = (a+b+c)/2",
+      "concepts": [
+        "a",
+        "b",
+        "c",
+        "p"
+      ],
+      "expression": "p - (a + b + c)/2"
+    },
+    {
+      "idx": 16,
+      "name": "định lý về tổng 3 góc trong tam giác gocA + gocB + gocC = 180",
+      "concepts": [
+        "gocA",
+        "gocB",
+        "gocC"
+      ],
+      "expression": "gocA + gocB + gocC - 180"
+    }
+  ]
+}

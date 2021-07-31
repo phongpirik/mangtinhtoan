@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Giải bài toán tam giác </title>
+    
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Responsive HTML5 Template" />
+
+    <!-- Favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/manifest.json" /> -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', path='img/favicon/apple-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', path='img/favicon/apple-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', path='img/favicon/apple-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', path='img/favicon/apple-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', path='img/favicon/apple-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', path='img/favicon/apple-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', path='img/favicon/apple-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', path='img/favicon/apple-icon-152x152.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', path='img/favicon/apple-icon-180x180.png') }}" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', path='img/favicon/android-icon-192x192.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', path='img/favicon/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', path='img/favicon/favicon-96x96.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', path='img/favicon/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', path='img/favicon/manifest.json') }}" />
+
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Web Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic%7CInconsolata:400,700%7CMontserrat:400,700' rel='stylesheet' type='text/css' />
+    
+    <!-- build:css css/icons.css -->
+    
+    <!-- Icon Fonts  -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/linecons.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+     -->
+    <link href="{{ url_for('static', path='css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/linecons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/fontello.css') }}" rel="stylesheet">
+
+
+    <!-- endbuild -->
+    <!-- build:css css/vendor.css -->
+    
+    <!-- Vendor CSS -->
+    <!-- <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/owl-carousel/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="vendor/owl-carousel/owl-carousel/owl.transitions.css" />
+    <link rel="stylesheet" href="vendor/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="vendor/Swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="vendor/magnific-popup/dist/magnific-popup.css" /> -->
+
+    <link href="{{ url_for('static', path='css/jquery-ui.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/jquery-ui.structure.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/animate.css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/owl-carousel/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/owl-carousel/owl-carousel/owl.transitions.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/slick-carousel/slick/slick.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/Swiper/dist/css/swiper.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/magnific-popup/dist/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='select2/dist/css/select2.min.css') }}" rel="stylesheet">
+
+    
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <link href="{{ url_for('static', path='css/main.css') }}" rel="stylesheet">
+
+    
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader END-->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header-tp-4">
+            <div class="main-header">
+                <div class="mh-top">
+                    <div class="container">
+                        <div class="row flex">
+                            <div class="mh-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header END -->
+        <div class="inner-wrapper">
+            <div class="main">
+                <!-- Content -->
+                <div class="main-content">
+                    <!-- Page head tile -->
+                    <!-- Page head tile END -->
+                    <div class="section">
+                        <div class="row">
+<div class="content">
+    <div class="pst-block">
+        <div class="pst-block-main">
+            <div class="search-pane">
+                <div class="search-form-1">
+                    <div class="form-group form-control">
+                        <h4> Giả thuyết                    
+                        </h4>
+                        <label style="display: block">
+                            Cho tam giác abc, ta có:
+                        </label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div id="txtgiathuyet">
+                    </div>
+                    <span style="display: block; font-style: italic;">* Đơn vị đo góc là độ (deg)</span>
+                    <span style="display: block; font-style: italic;">Nhập các giá trị hằng số . VD: a = 4</span>
+                    <select class="js-example-basic-single" name="state" id="thamso">
+                        <option value="a">Cạnh a</option>
+                        <option value="b">Cạnh b</option>
+                        <option value="c">Cạnh c</option>
+                        <option value="GocA">Góc A</option>
+                        <option value="GocB">Góc B</option>
+                        <option value="GocC">Góc C</option>
+                        <option value="ha">Đường cao ha</option>
+                        <option value="hb">Đường cao hb</option>
+                        <option value="hc">Đường cao hc</option>
+                        <option value="Area">Diện tích</option>
+                        <option value="p">Nửa chu vi</option>
+                        <option value="R">Bán kính đường tròn ngoại tiếp</option>
+                        <option value="r">Bán kính đường tròn nội tiếp</option>
+                    </select>
+                    <label> = </label>
+                    <input type="number" id="giatri" placeholder="Nhập giá trị số  > 0">
+                    <button id="them">Thêm</button>
+                    <div  style="display: block; margin: 10px;"></div>
+                    <span style="display: block;  font-style: italic;">Nhập 1 giá trị phương trình, dựa vào các yêu tố phụ thuộc nhau. VD: a = 2*b</span>
+                    <select class="js-example-basic-single" name="state" id="thamso_phuthuoc" >
+                        <option value="a">Cạnh a</option>
+                        <option value="b">Cạnh b</option>
+                        <option value="c">Cạnh c</option>
+                        <option value="GocA">Góc A</option>
+                        <option value="GocB">Góc B</option>
+                        <option value="GocC">Góc C</option>
+                        <option value="ha">Đường cao ha</option>
+                        <option value="hb">Đường cao hb</option>
+                        <option value="hc">Đường cao hc</option>
+                        <option value="Area">Diện tích</option>
+                        <option value="p">Nửa chu vi</option>
+                        <option value="R">Bán kính đường tròn ngoại tiếp</option>
+                        <option value="r">Bán kính đường tròn nội tiếp</option>
+                    </select>
+                    <label> = </label>
+                    <input id="giatri_phuthuoc"  placeholder="Nhập giá trị phụ thuộc">
+                    <button id="them_phuthuoc">Thêm</button>
+                    <div class="src-form">
+                        <div class="src-input" style="display: inline">
+                            <h4>KẾT LUẬN: </h4>
+                            <span style="display: block;  font-style: italic;">Tinh: </span>
+                            <select class="js-example-basic-multiple" name="ketluan[]" id = "targets">
+                                <option value="a">Cạnh a</option>
+                                <option value="b">Cạnh b</option>
+                                <option value="c">Cạnh c</option>
+                                <option value="gocA">Góc A</option>
+                                <option value="gocB">Góc B</option>
+                                <option value="gocC">Góc C</option>
+                                <option value="ha">Đường cao ha</option>
+                                <option value="hb">Đường cao hb</option>
+                                <option value="hc">Đường cao hc</option>
+                                <option value="Area">Diện tích</option>
+                                <option value="p">Nửa chu vi</option>
+                                <option value="R">Bán kính đường tròn ngoại tiếp</option>
+                                <option value="r">Bán kính đường tròn nội tiếp</option>
+                              </select>                        
+                        </div>
+                        <br>
+                        <div class="src-btn" style="display: block">
+                            <button id="giai">Giải</button><br/>
+                            <button id="xoa">Xoá</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-filters">
+                <div class="filters-list-3 js-tab-filter">
+                    <h3 href="" class="active">Kết quả</h3>
+                </div>
+            </div>
+            <div class="posts">
+                <article class="post post-tp-24" id = "container">
+                </article>
+<!--                <article class="post post-tp-24">-->
+<!--                    <h3 class="title-14"><a href="">Anger brewing over naming of Pfizer exec to UK foundation board</a></h3>-->
+<!--                    <p class="p">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium dolore mque laudantium, totamrem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi rchitecto</p>-->
+<!--                    <div class="meta-tp-2">-->
+<!--                        <div class="date"><span>october 2, 2015</span></div>-->
+<!--                        <div class="category">-->
+<!--                            <a href=""><i class="li_pen"></i><span>design</span></a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </article>-->
+            </div>
+        </div>
+    </div>
+</div>
+<aside class="side-bar sticky-wrap">
+    <div class="recent-nws">
+        <div class="pst-block">
+            <div class="pst-block-main">
+                <div class="inner-filters">
+                    <ul class="filters-list-3 js-tab-filter">
+                        <li><a href="" class="active">Mô tả các yêu tố được xét đến trong ứng dụng</a></li>
+                    </ul>
+                </div>
+                <div class="js-csp-block js-tab-slider">
+                    <div>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">A: Góc A, số đo góc tại đỉnh A</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">B: Góc B, số đo góc tại đỉnh B</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">C: Góc C, số đo góc tại đỉnh C</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">a: Cạnh a, độ dài cạnh a </h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">b: Cạnh b, độ dài cạnh b</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">c: Cạnh c, độ dài cạnh c</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">ha: Đường cao ha, độ dài đường cao tương ứng với cạnh a</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">hb: Đường cao hb, độ dài đường cao tương ứng với cạnh b</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">hc: Đường cao hc, độ dài đường cao tương ứng với cạnh c</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">Area: diện tích</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">p: nửa chu vi</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">r: bán kính đường tròn nội tiếp</h3>
+                        </article>
+                        <article class="post post-tp-9">
+                            <h3 class="title-6">R: bán kính đường tròn ngoại tiếp</h3>
+                        </article>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="pst-block-foot">
+                <div class="js-sbr-pagination"></div>
+            </div>
+        </div>
+    </div>
+</aside>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content END -->
+                <!-- Footer -->
+                <footer class="main-footer">
+                </footer>
+                <!-- Footer END -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Search block popup -->
+
+    <!-- Google maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;v=3"></script>
+    <!-- build:js scripts/vendor.js -->
+    
+    <!-- Vendor -->
+    <!-- <script src="vendor/jquery/dist/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="vendor/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="vendor/superfish/dist/js/superfish.js"></script>
+    <script src="vendor/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="vendor/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="vendor/owl-carousel/owl-carousel/owl.carousel.js"></script>
+    <script src="vendor/slick-carousel/slick/slick.js"></script>
+    <script src="vendor/Swiper/dist/js/swiper.jquery.js"></script>
+    <script src="vendor/sticky-kit/jquery.sticky-kit.js"></script> -->
+    
+    <script src="{{ url_for('static', path='vendor/jquery/dist/jquery.js') }}"></script>
+    <script src="{{ url_for('static', path='js/jquery-ui.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/waypoints/lib/jquery.waypoints.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/superfish/dist/js/superfish.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/magnific-popup/dist/jquery.magnific-popup.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/imagesloaded/imagesloaded.pkgd.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/owl-carousel/owl-carousel/owl.carousel.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/slick-carousel/slick/slick.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/Swiper/dist/js/swiper.jquery.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/sticky-kit/jquery.sticky-kit.js') }}"></script>
+    <script src="{{ url_for('static', path='select2/dist/js/select2.min.js') }}"></script>
+
+    <script>
+    $( document ).ready(function() {
+
+        var input_facts = [null,null,null,null,null,null,null,null,null,null,null,null,null];
+        var txtgiathuyet = $("#txtgiathuyet");
+        var targets = [];
+        var rules = [];
+        var cidx = 99;
+        $("#xoa").click(function(){
+            document.getElementById("container").innerHTML = '';
+            document.getElementById("txtgiathuyet").innerHTML = '';
+            input_facts = [null,null,null,null,null,null,null,null,null,null,null,null,null];
+            cidx = 99;
+            targets = [];
+            rules = [];
+        });
+        $("#giai").click(function(){
+            target = $("#targets").val()
+            var dataj = {
+                "facts" : input_facts,
+                "targets" :  [target],
+                "rules" : rules,
+            }
+            console.log(dataj);
+            document.getElementById("container").innerHTML = '';
+
+            $.get( "http://127.0.0.1:8000/giaitoan/" + JSON.stringify(dataj) , function( data ) {
+                var container = $("#container");
+                container.innerHTML = '';
+                if (data == "no answer") {
+                    container.append("Bài toán không giải được");
+                }
+                var answers = data['answers'];
+                var facts = data['facts'];
+                var type = typeof(answers)
+                console.log(answers);
+                if(answers != null && type == 'object'){
+                    $.each(answers, function( index, value ) {
+                        idx = value['idx'];
+                        base = value['base'];
+                        rname = value['name'];
+                        concept = value['concept'];
+                        value = value['value'];
+                        console.log( idx + ": " + base + " - " + concept +"-"+value );
+                        if(idx == 0) {
+                            detail = " <h3>Theo công thức lượng giác ta tính được : </h3> <h3>"+ concept +" = " + value +"</h3> ";
+                            container.append(detail);
+                        } else if(idx >= 100) {
+                            detail = " <h3>Theo ràng buộc đã cho ở đề bài ta tính được : </h3> <h3>"+ concept +" = " + value +"</h3> ";
+                            container.append(detail);
+                        } else {
+                            detail = " <h3>Theo " + rname +" ta tính được : </h3> <h3>"+ concept +" = " + value +"</h3> ";
+                            container.append(detail);
+                        }
+                        
+                    });
+                } else{
+                    alert('null')
+                }
+
+                // $( ".result" ).html( data );
+            });
+        }); 
+        $("#them").click(function(){
+            var thamso = $("#thamso").val();
+            var idx = document.getElementById("thamso").selectedIndex;
+            var giatri = $("#giatri").val();
+            if(giatri == null || giatri <1){
+                alert ("Giá trị không được để trống, phải là số và lớn hơn 0");
+                return false;
+            } else {
+                console.log(thamso)
+                input_facts[idx] = Number(giatri)
+                
+                gt = " <p id= 'txt_giatri'> "+ thamso +" = " + giatri +"</p> ";
+                txtgiathuyet.append(gt);
+                console.log(input_facts);
+        
+            }
+        });
+
+        $("#them_phuthuoc").click(function(){
+         
+                var thamso_phuthuoc = $("#thamso_phuthuoc").val();
+                var giatri_phuthuoc = $("#giatri_phuthuoc").val();
+                var expression = giatri_phuthuoc + "-" + thamso_phuthuoc;
+                var concepts = [];
+                
+                concepts.push(thamso_phuthuoc);
+                var factsName = ['a', 'b', 'c', 'gocA', 'gocB', 'gocC', 'ha', 'hb', 'hc', 'Area', 'p', 'R', 'r']
+                for (let j = 0; j< factsName.length; j++) {
+                    if (giatri_phuthuoc.includes(factsName[j])) {
+                        concepts.push(factsName[j]);
+                    }
+                }
+
+                cidx++;
+                rules.push({
+                    "idx": cidx,
+                    "name": "",
+                    "concepts": concepts,
+                    "expression": expression
+                });
+
+                console.log(concepts);
+                gt = " <p class='txt_phuthuoc'> "+ thamso_phuthuoc +" = " + giatri_phuthuoc +"</p> ";
+                txtgiathuyet.append(gt);
+                console.log(input_facts);
+            
+      
+        });
+    });
+
+
+    </script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    
+    <!-- Theme Base, Components and Settings -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="{{ url_for('static', path='js/main.js') }}"></script>
+
+    
+    <!-- endbuild -->
+</body>
+
+</html>

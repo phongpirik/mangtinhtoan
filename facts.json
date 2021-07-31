@@ -1,0 +1,31 @@
+{
+  "facts": [
+    6,
+    null,
+    7,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "targets": [
+    "gocB"
+  ],
+  "rules": [
+    {
+      "idx": 100,
+      "name": "",
+      "concepts": [
+        "a",
+        "b"
+      ],
+      "expression": "a - 2*b"
+    }
+  ]
+}

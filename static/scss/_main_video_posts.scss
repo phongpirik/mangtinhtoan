@@ -1,0 +1,41 @@
+.main-video-posts {
+    background: #1f2124;
+    margin-bottom: 45px;
+}
+
+.video-posts-pane {
+    @include outer-container;
+    @include pad(0 15px);
+    @include media($md) {
+        max-width: 1020px;
+    }
+    @include media($sm) {
+        max-width: 710px;
+    }
+    .owl-controls {
+        position: absolute;
+        top: 50%;
+        right: -30px;
+        height: 100px;
+        width: 11px;
+        line-height: 100px;
+        margin-top: -50px;
+    }
+    .owl-pagination {
+        display: inline-block;
+        line-height: 7px;
+        vertical-align: middle;
+        .owl-page {
+            margin: 2px 2px 3px;
+            span {
+                background: #fff;
+            }
+            &.active {
+                span {
+                    background: $accent-color;
+                    border-color: $accent-color;
+                }
+            }
+        }
+    }
+}

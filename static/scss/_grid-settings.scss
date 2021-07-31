@@ -1,0 +1,14 @@
+@import "neat-helpers";
+
+// Grid settings
+$max-width: 1170px !global;
+$grid-columns: 12;
+$gutter: 0em !global;
+
+// Breakpoints
+$mb-pt: new-breakpoint(max-width 479px 12);
+$mb-ls: new-breakpoint(max-width 639px 12);
+$xs: new-breakpoint(max-width 767px 12);
+$sm: new-breakpoint(max-width 1077px 12);
+$md: new-breakpoint(max-width 1229px 12);
+$lg: new-breakpoint(max-width 1520px 12);
