@@ -1,0 +1,276 @@
+.c-hamburger {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 19px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.c-hamburger:focus {
+    outline: none;
+}
+
+.c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 9px;
+    width: 100%;
+    height: 1px;
+    background: #1c1c1c;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #1c1c1c;
+    content: "";
+}
+
+.c-hamburger span::before {
+    top: -4px;
+}
+
+.c-hamburger span::after {
+    bottom: -4px;
+}
+
+.htx {
+    background-color: transparent;
+}
+
+.htx span {
+    transition: background 0s 0.3s;
+}
+
+.htx span::before,
+.htx span::after {
+    transition-duration: 0.3s, 0.3s;
+    transition-delay: 0.3s, 0s;
+}
+
+.htx span::before {
+    transition-property: top, transform;
+}
+
+.htx span::after {
+    transition-property: bottom, transform;
+}
+
+
+/* active state, i.e. menu open */
+
+.htx.is-active span {
+    background: none;
+}
+
+.htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+.htx.is-active span::before,
+.htx.is-active span::after {
+    transition-delay: 0s, 0.3s;
+}
+
+.st-btn-1 {
+    appearance: none;
+    color: #1c1c1c;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+}
+
+.btn-1 {
+    appearance: none;
+    color: #fff;
+    background-color: $accent-color;
+    border-radius: 2px;
+    cursor: pointer;
+    font: 500 11px/24px $main-font;
+    border: none;
+    display: block;
+    padding: 6px 10px 4px;
+    min-width: 100px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: lighten($accent-color, 6%);
+    }
+}
+
+.btn-2 {
+    appearance: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 2px;
+    cursor: pointer;
+    font: 500 11px/24px $main-font;
+    border: none;
+    display: inline-block;
+    padding: 5px 10px;
+    min-width: 98px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {}
+}
+
+.btn-3 {
+    appearance: none;
+    color: #fff;
+    background-color: $accent-color;
+    border-radius: 2px;
+    cursor: pointer;
+    font: 500 11px/24px $main-font;
+    border: none;
+    display: inline-block;
+    padding: 7px 10px;
+    min-width: 132px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($accent-color, 4%);
+    }
+}
+
+.btn-4 {
+    appearance: none;
+    color: #606060;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font: 500 12px/22px $main-font;
+    border: none;
+    display: inline-block;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    &:hover,
+    &:active,
+    &:focus {
+        color: #000;
+    }
+}
+
+.btn-5 {
+    appearance: none;
+    color: #fff;
+    background-color: #16171a;
+    border-radius: 2px;
+    cursor: pointer;
+    font: 500 11px/22px $main-font;
+    border: none;
+    display: inline-block;
+    padding: 7px 10px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #2a2d31;
+    }
+    i {
+        margin: -3px 6px 0px 0;
+    }
+}
+
+.btn-6 {
+    appearance: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .04);
+    cursor: pointer;
+    font: 500 11px/22px $main-font;
+    border: 1px solid #e8e8e8;
+    display: inline-block;
+    padding: 6px 22px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: #34373d;
+        border-color: #34373d;
+        color: #fff;
+    }
+}
+
+.btn-7 {
+    appearance: none;
+    color: #000;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, .04);
+    cursor: pointer;
+    font: 500 11px/22px $main-font;
+    border: 1px solid #e8e8e8;
+    display: inline-block;
+    padding: 8px 38px;
+    vertical-align: top;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        color: $accent-color;
+    }
+    @include media($sm) {
+        padding: 8px 20px;
+    }
+}
+
+.btn-8 {
+    appearance: none;
+    color: #fff;
+    background-color: $accent-color;
+    border-radius: 2px;
+    cursor: pointer;
+    font: 600 12px/24px $main-font;
+    border: none;
+    display: block;
+    padding: 12px 10px 11px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: darken($accent-color, 4%);
+    }
+}

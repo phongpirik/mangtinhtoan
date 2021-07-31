@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>Mạng tính toán </title>
+    
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Responsive HTML5 Template" />
+
+    <!-- Favicon -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="img/favicon/manifest.json" /> -->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', path='img/favicon/apple-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', path='img/favicon/apple-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', path='img/favicon/apple-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', path='img/favicon/apple-icon-76x76.png') }}" />
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ url_for('static', path='img/favicon/apple-icon-114x114.png') }}" />
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ url_for('static', path='img/favicon/apple-icon-120x120.png') }}" />
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ url_for('static', path='img/favicon/apple-icon-144x144.png') }}" />
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', path='img/favicon/apple-icon-152x152.png') }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', path='img/favicon/apple-icon-180x180.png') }}" />
+
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ url_for('static', path='img/favicon/android-icon-192x192.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', path='img/favicon/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', path='img/favicon/favicon-96x96.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', path='img/favicon/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', path='img/favicon/manifest.json') }}" />
+
+
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Web Fonts  -->
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic%7CInconsolata:400,700%7CMontserrat:400,700' rel='stylesheet' type='text/css' />
+    
+    <!-- build:css css/icons.css -->
+    
+    <!-- Icon Fonts  -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/linecons.css" />
+    <link rel="stylesheet" href="css/fontello.css" />
+     -->
+    <link href="{{ url_for('static', path='css/font-awesome.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/linecons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/fontello.css') }}" rel="stylesheet">
+
+
+    <!-- endbuild -->
+    <!-- build:css css/vendor.css -->
+    
+    <!-- Vendor CSS -->
+    <!-- <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="css/jquery-ui.structure.css" />
+    <link rel="stylesheet" href="vendor/animate.css/animate.css" />
+    <link rel="stylesheet" href="vendor/owl-carousel/owl-carousel/owl.carousel.css" />
+    <link rel="stylesheet" href="vendor/owl-carousel/owl-carousel/owl.transitions.css" />
+    <link rel="stylesheet" href="vendor/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="vendor/Swiper/dist/css/swiper.css" />
+    <link rel="stylesheet" href="vendor/magnific-popup/dist/magnific-popup.css" /> -->
+
+    <link href="{{ url_for('static', path='css/jquery-ui.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='css/jquery-ui.structure.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/animate.css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/owl-carousel/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/owl-carousel/owl-carousel/owl.transitions.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/slick-carousel/slick/slick.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/Swiper/dist/css/swiper.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='vendor/magnific-popup/dist/magnific-popup.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', path='select2/dist/css/select2.min.css') }}" rel="stylesheet">
+
+    
+    <!-- endbuild -->
+    <!-- build:css css/main.css -->
+    
+    <!-- Theme CSS -->
+    <!-- <link rel="stylesheet" href="css/main.css" /> -->
+    <link href="{{ url_for('static', path='css/main.css') }}" rel="stylesheet">
+
+    
+    <!-- endbuild -->
+</head>
+
+<body>
+    <!-- Loader -->
+    <div class="page-loader">
+        <div class="loader">
+            <div class="flipper">
+                <div class="front"></div>
+                <div class="back"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Loader END-->
+    <div class="main-wrapper">
+        <!-- Header -->
+        <header class="header-tp-4">
+            <div class="main-header">
+                <div class="mh-top">
+                    <div class="container">
+                        <div class="row flex">
+                            <div class="mh-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header END -->
+        <div class="inner-wrapper">
+            <div class="main">
+                <!-- Content -->
+                <div class="main-content">
+                    <!-- Page head tile -->
+                    <!-- Page head tile END -->
+                    <div class="section">
+                        <div class="row">
+<div class="content">
+    <div class="pst-block">
+        <div class="pst-block-main">
+            <div class="search-pane">
+                <div class="search-form-1">
+                    <div class="form-group form-control">
+                        <h4> Quản lý tập hợp biến M, tập hợp quan hệ F                  
+                        </h4>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <select class="js-example-basic-single select_mang" name="state" id="thamso">
+                        
+                    </select>
+                    <span style="display: block; font-style: italic;">Các biến M . VD: a,b,c</span>
+                
+                    <label> Biến </label>
+                    <input type="text" id="name_bien" placeholder="Nhập giá trị biến">
+
+                    <label> Mô tả</label>
+                    <input type="text" id="mota_bien" placeholder="Mô tả">
+                    
+                    <button id="them_bien">Thêm</button>
+                    <div  style="display: block; margin: 10px;"></div>
+                    <div id="list_bien">
+                    </div>
+
+                    <hr  width="100%" size="5px" align="center" color="black" style="margin-top: 30px;" />
+
+                    <span style="display: block;  font-style: italic;">Các luật(quan hệ) F. VD: a*ha - 2*S</span>
+                    <p> Điều kiện: các dấu câu phải rõ ràng cụ  thể  và cần chuyển đổi về dạng phương trình (a*x + b*y = 0), khi đó chỉ cần nhập a*x + b*y </p>
+
+                    <label> Luật </label></span>
+                    <input type="text" id="name_luat" placeholder="Nhập giá trị">
+
+                    <label> Mô tả</label>
+                    <input type="text" id="mota_luat" placeholder="Mô tả">
+                    <button id="them_luat">Thêm</button>
+                    <div  style="display: block; margin: 10px;"></div>
+                    <div id="list_luat">
+                    </div>
+                </div>
+            </div>
+            <div class="result">
+
+            </div>
+            <div class="posts">
+                <article class="post post-tp-24" id = "container">
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+<aside class="side-bar sticky-wrap">
+    <div class="recent-nws">
+        <div class="pst-block">
+            <div class="pst-block-main">
+                <div class="inner-filters">
+                    <ul class="filters-list-3 js-tab-filter">
+                        <li><a href="" class="active"> Quản lý mạng tính toán</a></li>
+                    </ul>
+                </div>
+                <div class="js-tab-slider">
+                    <div style="display: block;">
+                        <label> Tên mạng </label>
+                        <input type="text" id="name_mang" placeholder="Nhập tên mạng tính toán">
+                    </div>
+                    <div>
+                        <label> Mô tả</label>
+                        <input type="text" id="mota_mang" placeholder="Mô tả mạng tính toán">
+                    </div>
+                    
+                    <button id="them_mang">Thêm</button>
+                    <div  style="display: block; margin: 10px;"></div>
+                
+                </div>
+            </div>
+            <div class="pst-block-main">
+                <div class="inner-filters">
+                    <ul class="filters-list-3 js-tab-filter">
+                        <li><a href="" class="active">Danh sách mạng tính toán</a></li>
+                    </ul>
+                </div>
+                <hr class="pst-block-hr">
+                <div class="js-csp-block js-tab-slider">
+                    <div>
+                        <article id="list_mang" class="post post-tp-9">
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="pst-block-foot">
+                <div class="js-sbr-pagination"></div>
+            </div>
+        </div>
+    </div>
+</aside>
+                        </div>
+                    </div>
+                </div>
+                <!-- Content END -->
+                <!-- Footer -->
+                <footer class="main-footer">
+                </footer>
+                <!-- Footer END -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Search block popup -->
+
+    <!-- Google maps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=true&amp;v=3"></script>
+    <!-- build:js scripts/vendor.js -->
+    
+    
+    <script src="{{ url_for('static', path='vendor/jquery/dist/jquery.js') }}"></script>
+    <script src="{{ url_for('static', path='js/jquery-ui.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/waypoints/lib/jquery.waypoints.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/superfish/dist/js/superfish.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/magnific-popup/dist/jquery.magnific-popup.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/imagesloaded/imagesloaded.pkgd.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/owl-carousel/owl-carousel/owl.carousel.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/slick-carousel/slick/slick.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/Swiper/dist/js/swiper.jquery.js') }}"></script>
+    <script src="{{ url_for('static', path='vendor/sticky-kit/jquery.sticky-kit.js') }}"></script>
+    <script src="{{ url_for('static', path='select2/dist/js/select2.min.js') }}"></script>
+
+    <script>
+
+    function xoa_bien(d){  
+        $(d).parent().remove();
+    } 
+    function xoa_luat(d){  
+        $(d).parent().remove();
+    } 
+    $( document ).ready(function() {
+        $("#them_bien").click(function(){
+            name_bien = $("#name_bien").val();
+            mota_bien = $("#mota_bien").val();
+            data =  '{"name_bien":"'+name_bien+'","mota_bien":"'+mota_bien+'"}',
+            url = "http://127.0.0.1:8000/cms/create/save-bien"
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                processData: false,
+                data: data,
+                success: function (data) {
+                    gt = "<div class='txt_bien'> <span> "+ data.name_bien +" : " + data.mota_bien +"--</span><button onclick='xoa_bien(this)'>Xóa</button> </br></div>";
+                    $( "#list_bien" ).append(gt);
+                },
+                error: function(){
+                    alert("Cannot get data");
+                }
+            });
+            $("#name_bien").val('');
+            $("#mota_bien").val('');
+        }); 
+
+        $("#them_luat").click(function(){
+            name_luat = $("#name_luat").val();
+            mota_luat = $("#mota_luat").val();
+
+            data =  '{"name_luat":"'+name_luat+'","mota_luat":"'+mota_luat+'"}',
+            url = "http://127.0.0.1:8000/cms/create/save-luat"
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                processData: false,
+                data: data,
+                success: function (data) {
+                    gt = "<div class='txt_luat'> <span>"+ data.name_luat +" : " + data.mota_luat +"--</span><button name='xoa_luat' onclick='xoa_luat(this)'>Xóa</button> </br></div>";
+                    $( "#list_luat" ).append(gt);
+                },
+                error: function(){
+                    alert("Cannot get data");
+                }
+            });
+            $("#name_luat").val('');
+            $("#mota_luat").val('');
+        }); 
+
+        $("#them_mang").click(function(){
+            name_mang = $("#name_mang").val();
+            mota_mang = $("#mota_mang").val();
+
+            data =  '{"name_mang":"'+name_mang+'","mota_mang":"'+mota_mang+'"}',
+            url = "http://127.0.0.1:8000/cms/create/save-mang"
+            $.ajax({
+                url: url,
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                processData: false,
+                data: data,
+                success: function (data) {
+                    gt = "<h3 class='title-6 txt_mang'> <a href='#'>"+ data.name_mang +" : " + data.mota_mang +"</a></br></h3>";
+                    $( "#list_mang" ).append(gt);
+
+                    select = "<option value='"+data.name_mang+"'>"+data.mota_mang+"</option>";
+                    $(".select_mang").append(select);
+                },
+                error: function(){
+                    alert("Cannot get data");
+                }
+            });
+            $("#name_mang").val('');
+            $("#mota_mang").val('');
+        }); 
+
+        
+    });
+
+
+    </script>
+    <!-- endbuild -->
+    <!-- build:js scripts/main.js -->
+    
+    <!-- Theme Base, Components and Settings -->
+    <!-- <script src="js/main.js"></script> -->
+    <script src="{{ url_for('static', path='js/main.js') }}"></script>
+
+    
+    <!-- endbuild -->
+</body>
+
+</html>

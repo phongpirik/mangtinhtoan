@@ -1,0 +1,436 @@
+// Grid
+@include media($lg) {
+    .lg {
+        &-full {
+            @include span-columns(12);
+        }
+        &-half {
+            @include span-columns(6);
+        }
+        &-one-third {
+            @include span-columns(4);
+        }
+        &-two-thirds {
+            @include span-columns(8);
+        }
+        &-one-quarter {
+            @include span-columns(3);
+        }
+        &-one-sixth {
+            @include span-columns(2);
+        }
+        &-three-quarters {
+            @include span-columns(9);
+        }
+        &-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-half {
+            @include span-columns(6);
+        }
+        &-col-one-third {
+            @include span-columns(4);
+        }
+        &-col-two-thirds {
+            @include span-columns(8);
+        }
+        &-col-one-quarter {
+            @include span-columns(3);
+        }
+        &-col-three-quarters {
+            @include span-columns(9);
+        }
+        &-col-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-col-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-col-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-hide {
+            display: none !important;
+        }
+    }
+}
+
+@include media($md) {
+    .md {
+        &-full {
+            @include span-columns(12);
+        }
+        &-half {
+            @include span-columns(6);
+        }
+        &-one-third {
+            @include span-columns(4);
+        }
+        &-two-thirds {
+            @include span-columns(8);
+        }
+        &-one-quarter {
+            @include span-columns(3);
+        }
+        &-one-sixth {
+            @include span-columns(2);
+        }
+        &-three-quarters {
+            @include span-columns(9);
+        }
+        &-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-half {
+            @include span-columns(6);
+        }
+        &-col-one-third {
+            @include span-columns(4);
+        }
+        &-col-two-thirds {
+            @include span-columns(8);
+        }
+        &-col-one-quarter {
+            @include span-columns(3);
+        }
+        &-col-three-quarters {
+            @include span-columns(9);
+        }
+        &-col-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-col-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-col-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-hide {
+            display: none !important;
+        }
+    }
+}
+
+@include media($sm) {
+    .sm {
+        &-full {
+            @include span-columns(12);
+        }
+        &-half {
+            @include span-columns(6);
+        }
+        &-one-third {
+            @include span-columns(4);
+        }
+        &-two-thirds {
+            @include span-columns(8);
+        }
+        &-one-quarter {
+            @include span-columns(3);
+        }
+        &-one-sixth {
+            @include span-columns(2);
+        }
+        &-three-quarters {
+            @include span-columns(9);
+        }
+        &-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-half {
+            @include span-columns(6);
+        }
+        &-col-one-third {
+            @include span-columns(4);
+        }
+        &-col-two-thirds {
+            @include span-columns(8);
+        }
+        &-col-one-quarter {
+            @include span-columns(3);
+        }
+        &-col-three-quarters {
+            @include span-columns(9);
+        }
+        &-col-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-col-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-col-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-hide {
+            display: none !important;
+        }
+    }
+}
+@include media($xs) {
+    .xs {
+        &-full {
+            @include span-columns(12);
+        }
+        &-half {
+            @include span-columns(6);
+        }
+        &-one-third {
+            @include span-columns(4);
+        }
+        &-two-thirds {
+            @include span-columns(8);
+        }
+        &-one-quarter {
+            @include span-columns(3);
+        }
+        &-one-sixth {
+            @include span-columns(2);
+        }
+        &-three-quarters {
+            @include span-columns(9);
+        }
+        &-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-half {
+            @include span-columns(6);
+        }
+        &-col-one-third {
+            @include span-columns(4);
+        }
+        &-col-two-thirds {
+            @include span-columns(8);
+        }
+        &-col-one-quarter {
+            @include span-columns(3);
+        }
+        &-col-three-quarters {
+            @include span-columns(9);
+        }
+        &-col-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-col-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-col-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-hide {
+            display: none !important;
+        }
+    }
+}
+@include media($mb-ls) {
+    .mb-ls {
+        &-full {
+            @include span-columns(12);
+        }
+        &-half {
+            @include span-columns(6);
+        }
+        &-one-third {
+            @include span-columns(4);
+        }
+        &-two-thirds {
+            @include span-columns(8);
+        }
+        &-one-quarter {
+            @include span-columns(3);
+        }
+        &-one-sixth {
+            @include span-columns(2);
+        }
+        &-three-quarters {
+            @include span-columns(9);
+        }
+        &-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-half {
+            @include span-columns(6);
+        }
+        &-col-one-third {
+            @include span-columns(4);
+        }
+        &-col-two-thirds {
+            @include span-columns(8);
+        }
+        &-col-one-quarter {
+            @include span-columns(3);
+        }
+        &-col-three-quarters {
+            @include span-columns(9);
+        }
+        &-col-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-col-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-col-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-hide {
+            display: none !important;
+        }
+    }
+}
+
+@include media($mb-pt) {
+    .mb-pt {
+        &-full {
+            @include span-columns(12);
+        }
+        &-half {
+            @include span-columns(6);
+        }
+        &-one-third {
+            @include span-columns(4);
+        }
+        &-two-thirds {
+            @include span-columns(8);
+        }
+        &-one-quarter {
+            @include span-columns(3);
+        }
+        &-one-sixth {
+            @include span-columns(2);
+        }
+        &-three-quarters {
+            @include span-columns(9);
+        }
+        &-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-half {
+            @include span-columns(6);
+        }
+        &-col-one-third {
+            @include span-columns(4);
+        }
+        &-col-two-thirds {
+            @include span-columns(8);
+        }
+        &-col-one-quarter {
+            @include span-columns(3);
+        }
+        &-col-three-quarters {
+            @include span-columns(9);
+        }
+        &-col-one-fifth {
+            @include span-columns(2 of 10);
+        }
+        &-col-two-fifths {
+            @include span-columns(4 of 10);
+        }
+        &-col-three-fifths {
+            @include span-columns(6 of 10);
+        }
+        &-col-four-fifths {
+            @include span-columns(8 of 10);
+        }
+        &-hide {
+            display: none !important;
+        }
+    }
+}
+
+// Content elements
+.main-footer {
+    .bottom-part {
+        .ft-social {
+            @include media($sm) {
+                margin-top: 25px;
+            }
+        }
+    }
+}
+
+.ft-menu {
+    @include media($sm) {
+        text-align: center;
+    }
+}
+
+.main-slider-1 {
+    @include media($sm) {
+        .ptp-1-data {
+            padding: 0 60px 27px;
+        }
+    }
+    @include media($xs) {
+        .ptp-1-data {
+            padding: 0 30px 27px;
+        }
+    }
+}

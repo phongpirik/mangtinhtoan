@@ -1,0 +1,202 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$aside-menu-close-ic-name: 'aside-menu-close-ic';
+$aside-menu-close-ic-x: 106px;
+$aside-menu-close-ic-y: 0px;
+$aside-menu-close-ic-offset-x: -106px;
+$aside-menu-close-ic-offset-y: 0px;
+$aside-menu-close-ic-width: 20px;
+$aside-menu-close-ic-height: 20px;
+$aside-menu-close-ic-total-width: 194px;
+$aside-menu-close-ic-total-height: 29px;
+$aside-menu-close-ic-image: '../img/sprite.png';
+$aside-menu-close-ic: (106px, 0px, -106px, 0px, 20px, 20px, 194px, 29px, '../img/sprite.png', 'aside-menu-close-ic', );
+$check-ic-1-name: 'check-ic-1';
+$check-ic-1-x: 54px;
+$check-ic-1-y: 0px;
+$check-ic-1-offset-x: -54px;
+$check-ic-1-offset-y: 0px;
+$check-ic-1-width: 14px;
+$check-ic-1-height: 14px;
+$check-ic-1-total-width: 194px;
+$check-ic-1-total-height: 29px;
+$check-ic-1-image: '../img/sprite.png';
+$check-ic-1: (54px, 0px, -54px, 0px, 14px, 14px, 194px, 29px, '../img/sprite.png', 'check-ic-1', );
+$ms-next-ic-name: 'ms-next-ic';
+$ms-next-ic-x: 68px;
+$ms-next-ic-y: 0px;
+$ms-next-ic-offset-x: -68px;
+$ms-next-ic-offset-y: 0px;
+$ms-next-ic-width: 19px;
+$ms-next-ic-height: 23px;
+$ms-next-ic-total-width: 194px;
+$ms-next-ic-total-height: 29px;
+$ms-next-ic-image: '../img/sprite.png';
+$ms-next-ic: (68px, 0px, -68px, 0px, 19px, 23px, 194px, 29px, '../img/sprite.png', 'ms-next-ic', );
+$ms-prev-ic-name: 'ms-prev-ic';
+$ms-prev-ic-x: 87px;
+$ms-prev-ic-y: 0px;
+$ms-prev-ic-offset-x: -87px;
+$ms-prev-ic-offset-y: 0px;
+$ms-prev-ic-width: 19px;
+$ms-prev-ic-height: 23px;
+$ms-prev-ic-total-width: 194px;
+$ms-prev-ic-total-height: 29px;
+$ms-prev-ic-image: '../img/sprite.png';
+$ms-prev-ic: (87px, 0px, -87px, 0px, 19px, 23px, 194px, 29px, '../img/sprite.png', 'ms-prev-ic', );
+$page-nav-next-ic-name: 'page-nav-next-ic';
+$page-nav-next-ic-x: 9px;
+$page-nav-next-ic-y: 0px;
+$page-nav-next-ic-offset-x: -9px;
+$page-nav-next-ic-offset-y: 0px;
+$page-nav-next-ic-width: 9px;
+$page-nav-next-ic-height: 7px;
+$page-nav-next-ic-total-width: 194px;
+$page-nav-next-ic-total-height: 29px;
+$page-nav-next-ic-image: '../img/sprite.png';
+$page-nav-next-ic: (9px, 0px, -9px, 0px, 9px, 7px, 194px, 29px, '../img/sprite.png', 'page-nav-next-ic', );
+$page-nav-prev-ic-name: 'page-nav-prev-ic';
+$page-nav-prev-ic-x: 18px;
+$page-nav-prev-ic-y: 0px;
+$page-nav-prev-ic-offset-x: -18px;
+$page-nav-prev-ic-offset-y: 0px;
+$page-nav-prev-ic-width: 9px;
+$page-nav-prev-ic-height: 7px;
+$page-nav-prev-ic-total-width: 194px;
+$page-nav-prev-ic-total-height: 29px;
+$page-nav-prev-ic-image: '../img/sprite.png';
+$page-nav-prev-ic: (18px, 0px, -18px, 0px, 9px, 7px, 194px, 29px, '../img/sprite.png', 'page-nav-prev-ic', );
+$paypal-ic-name: 'paypal-ic';
+$paypal-ic-x: 155px;
+$paypal-ic-y: 0px;
+$paypal-ic-offset-x: -155px;
+$paypal-ic-offset-y: 0px;
+$paypal-ic-width: 39px;
+$paypal-ic-height: 25px;
+$paypal-ic-total-width: 194px;
+$paypal-ic-total-height: 29px;
+$paypal-ic-image: '../img/sprite.png';
+$paypal-ic: (155px, 0px, -155px, 0px, 39px, 25px, 194px, 29px, '../img/sprite.png', 'paypal-ic', );
+$popup-close-ic-name: 'popup-close-ic';
+$popup-close-ic-x: 126px;
+$popup-close-ic-y: 0px;
+$popup-close-ic-offset-x: -126px;
+$popup-close-ic-offset-y: 0px;
+$popup-close-ic-width: 29px;
+$popup-close-ic-height: 29px;
+$popup-close-ic-total-width: 194px;
+$popup-close-ic-total-height: 29px;
+$popup-close-ic-image: '../img/sprite.png';
+$popup-close-ic: (126px, 0px, -126px, 0px, 29px, 29px, 194px, 29px, '../img/sprite.png', 'popup-close-ic', );
+$remove-ic-1-name: 'remove-ic-1';
+$remove-ic-1-x: 36px;
+$remove-ic-1-y: 0px;
+$remove-ic-1-offset-x: -36px;
+$remove-ic-1-offset-y: 0px;
+$remove-ic-1-width: 9px;
+$remove-ic-1-height: 9px;
+$remove-ic-1-total-width: 194px;
+$remove-ic-1-total-height: 29px;
+$remove-ic-1-image: '../img/sprite.png';
+$remove-ic-1: (36px, 0px, -36px, 0px, 9px, 9px, 194px, 29px, '../img/sprite.png', 'remove-ic-1', );
+$remove-ic-2-name: 'remove-ic-2';
+$remove-ic-2-x: 45px;
+$remove-ic-2-y: 0px;
+$remove-ic-2-offset-x: -45px;
+$remove-ic-2-offset-y: 0px;
+$remove-ic-2-width: 9px;
+$remove-ic-2-height: 9px;
+$remove-ic-2-total-width: 194px;
+$remove-ic-2-total-height: 29px;
+$remove-ic-2-image: '../img/sprite.png';
+$remove-ic-2: (45px, 0px, -45px, 0px, 9px, 9px, 194px, 29px, '../img/sprite.png', 'remove-ic-2', );
+$tl-next-ic-name: 'tl-next-ic';
+$tl-next-ic-x: 27px;
+$tl-next-ic-y: 0px;
+$tl-next-ic-offset-x: -27px;
+$tl-next-ic-offset-y: 0px;
+$tl-next-ic-width: 9px;
+$tl-next-ic-height: 5px;
+$tl-next-ic-total-width: 194px;
+$tl-next-ic-total-height: 29px;
+$tl-next-ic-image: '../img/sprite.png';
+$tl-next-ic: (27px, 0px, -27px, 0px, 9px, 5px, 194px, 29px, '../img/sprite.png', 'tl-next-ic', );
+$tl-prev-ic-name: 'tl-prev-ic';
+$tl-prev-ic-x: 0px;
+$tl-prev-ic-y: 0px;
+$tl-prev-ic-offset-x: 0px;
+$tl-prev-ic-offset-y: 0px;
+$tl-prev-ic-width: 9px;
+$tl-prev-ic-height: 5px;
+$tl-prev-ic-total-width: 194px;
+$tl-prev-ic-total-height: 29px;
+$tl-prev-ic-image: '../img/sprite.png';
+$tl-prev-ic: (0px, 0px, 0px, 0px, 9px, 5px, 194px, 29px, '../img/sprite.png', 'tl-prev-ic', );
+$spritesheet-width: 194px;
+$spritesheet-height: 29px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($aside-menu-close-ic, $check-ic-1, $ms-next-ic, $ms-prev-ic, $page-nav-next-ic, $page-nav-prev-ic, $paypal-ic, $popup-close-ic, $remove-ic-1, $remove-ic-2, $tl-next-ic, $tl-prev-ic, );
+$spritesheet: (194px, 29px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

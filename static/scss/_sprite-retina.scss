@@ -1,0 +1,727 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$arr-down-dark-ic-name: 'arr-down-dark-ic';
+$arr-down-dark-ic-x: 0px;
+$arr-down-dark-ic-y: 0px;
+$arr-down-dark-ic-offset-x: 0px;
+$arr-down-dark-ic-offset-y: 0px;
+$arr-down-dark-ic-width: 5px;
+$arr-down-dark-ic-height: 9px;
+$arr-down-dark-ic-total-width: 351px;
+$arr-down-dark-ic-total-height: 24px;
+$arr-down-dark-ic-image: '../img/sprite-retina.png';
+$arr-down-dark-ic: (0px, 0px, 0px, 0px, 5px, 9px, 351px, 24px, '../img/sprite-retina.png', 'arr-down-dark-ic', );
+$arr-down-light-ic-name: 'arr-down-light-ic';
+$arr-down-light-ic-x: 20px;
+$arr-down-light-ic-y: 0px;
+$arr-down-light-ic-offset-x: -20px;
+$arr-down-light-ic-offset-y: 0px;
+$arr-down-light-ic-width: 5px;
+$arr-down-light-ic-height: 9px;
+$arr-down-light-ic-total-width: 351px;
+$arr-down-light-ic-total-height: 24px;
+$arr-down-light-ic-image: '../img/sprite-retina.png';
+$arr-down-light-ic: (20px, 0px, -20px, 0px, 5px, 9px, 351px, 24px, '../img/sprite-retina.png', 'arr-down-light-ic', );
+$arr-left-dark-ic-name: 'arr-left-dark-ic';
+$arr-left-dark-ic-x: 25px;
+$arr-left-dark-ic-y: 0px;
+$arr-left-dark-ic-offset-x: -25px;
+$arr-left-dark-ic-offset-y: 0px;
+$arr-left-dark-ic-width: 9px;
+$arr-left-dark-ic-height: 5px;
+$arr-left-dark-ic-total-width: 351px;
+$arr-left-dark-ic-total-height: 24px;
+$arr-left-dark-ic-image: '../img/sprite-retina.png';
+$arr-left-dark-ic: (25px, 0px, -25px, 0px, 9px, 5px, 351px, 24px, '../img/sprite-retina.png', 'arr-left-dark-ic', );
+$arr-left-light-ic-name: 'arr-left-light-ic';
+$arr-left-light-ic-x: 34px;
+$arr-left-light-ic-y: 0px;
+$arr-left-light-ic-offset-x: -34px;
+$arr-left-light-ic-offset-y: 0px;
+$arr-left-light-ic-width: 9px;
+$arr-left-light-ic-height: 5px;
+$arr-left-light-ic-total-width: 351px;
+$arr-left-light-ic-total-height: 24px;
+$arr-left-light-ic-image: '../img/sprite-retina.png';
+$arr-left-light-ic: (34px, 0px, -34px, 0px, 9px, 5px, 351px, 24px, '../img/sprite-retina.png', 'arr-left-light-ic', );
+$arr-right-dark-ic-name: 'arr-right-dark-ic';
+$arr-right-dark-ic-x: 43px;
+$arr-right-dark-ic-y: 0px;
+$arr-right-dark-ic-offset-x: -43px;
+$arr-right-dark-ic-offset-y: 0px;
+$arr-right-dark-ic-width: 9px;
+$arr-right-dark-ic-height: 5px;
+$arr-right-dark-ic-total-width: 351px;
+$arr-right-dark-ic-total-height: 24px;
+$arr-right-dark-ic-image: '../img/sprite-retina.png';
+$arr-right-dark-ic: (43px, 0px, -43px, 0px, 9px, 5px, 351px, 24px, '../img/sprite-retina.png', 'arr-right-dark-ic', );
+$arr-right-light-ic-name: 'arr-right-light-ic';
+$arr-right-light-ic-x: 52px;
+$arr-right-light-ic-y: 0px;
+$arr-right-light-ic-offset-x: -52px;
+$arr-right-light-ic-offset-y: 0px;
+$arr-right-light-ic-width: 9px;
+$arr-right-light-ic-height: 5px;
+$arr-right-light-ic-total-width: 351px;
+$arr-right-light-ic-total-height: 24px;
+$arr-right-light-ic-image: '../img/sprite-retina.png';
+$arr-right-light-ic: (52px, 0px, -52px, 0px, 9px, 5px, 351px, 24px, '../img/sprite-retina.png', 'arr-right-light-ic', );
+$arr-up-dark-ic-name: 'arr-up-dark-ic';
+$arr-up-dark-ic-x: 5px;
+$arr-up-dark-ic-y: 0px;
+$arr-up-dark-ic-offset-x: -5px;
+$arr-up-dark-ic-offset-y: 0px;
+$arr-up-dark-ic-width: 5px;
+$arr-up-dark-ic-height: 9px;
+$arr-up-dark-ic-total-width: 351px;
+$arr-up-dark-ic-total-height: 24px;
+$arr-up-dark-ic-image: '../img/sprite-retina.png';
+$arr-up-dark-ic: (5px, 0px, -5px, 0px, 5px, 9px, 351px, 24px, '../img/sprite-retina.png', 'arr-up-dark-ic', );
+$arr-up-light-ic-name: 'arr-up-light-ic';
+$arr-up-light-ic-x: 10px;
+$arr-up-light-ic-y: 0px;
+$arr-up-light-ic-offset-x: -10px;
+$arr-up-light-ic-offset-y: 0px;
+$arr-up-light-ic-width: 5px;
+$arr-up-light-ic-height: 9px;
+$arr-up-light-ic-total-width: 351px;
+$arr-up-light-ic-total-height: 24px;
+$arr-up-light-ic-image: '../img/sprite-retina.png';
+$arr-up-light-ic: (10px, 0px, -10px, 0px, 5px, 9px, 351px, 24px, '../img/sprite-retina.png', 'arr-up-light-ic', );
+$cart-2-ic-name: 'cart-2-ic';
+$cart-2-ic-x: 123px;
+$cart-2-ic-y: 0px;
+$cart-2-ic-offset-x: -123px;
+$cart-2-ic-offset-y: 0px;
+$cart-2-ic-width: 16px;
+$cart-2-ic-height: 16px;
+$cart-2-ic-total-width: 351px;
+$cart-2-ic-total-height: 24px;
+$cart-2-ic-image: '../img/sprite-retina.png';
+$cart-2-ic: (123px, 0px, -123px, 0px, 16px, 16px, 351px, 24px, '../img/sprite-retina.png', 'cart-2-ic', );
+$cart-ic-name: 'cart-ic';
+$cart-ic-x: 155px;
+$cart-ic-y: 0px;
+$cart-ic-offset-x: -155px;
+$cart-ic-offset-y: 0px;
+$cart-ic-width: 16px;
+$cart-ic-height: 16px;
+$cart-ic-total-width: 351px;
+$cart-ic-total-height: 24px;
+$cart-ic-image: '../img/sprite-retina.png';
+$cart-ic: (155px, 0px, -155px, 0px, 16px, 16px, 351px, 24px, '../img/sprite-retina.png', 'cart-ic', );
+$list-ic-1-name: 'list-ic-1';
+$list-ic-1-x: 171px;
+$list-ic-1-y: 0px;
+$list-ic-1-offset-x: -171px;
+$list-ic-1-offset-y: 0px;
+$list-ic-1-width: 16px;
+$list-ic-1-height: 14px;
+$list-ic-1-total-width: 351px;
+$list-ic-1-total-height: 24px;
+$list-ic-1-image: '../img/sprite-retina.png';
+$list-ic-1: (171px, 0px, -171px, 0px, 16px, 14px, 351px, 24px, '../img/sprite-retina.png', 'list-ic-1', );
+$list-ic-2-name: 'list-ic-2';
+$list-ic-2-x: 91px;
+$list-ic-2-y: 0px;
+$list-ic-2-offset-x: -91px;
+$list-ic-2-offset-y: 0px;
+$list-ic-2-width: 16px;
+$list-ic-2-height: 16px;
+$list-ic-2-total-width: 351px;
+$list-ic-2-total-height: 24px;
+$list-ic-2-image: '../img/sprite-retina.png';
+$list-ic-2: (91px, 0px, -91px, 0px, 16px, 16px, 351px, 24px, '../img/sprite-retina.png', 'list-ic-2', );
+$list-ic-3-name: 'list-ic-3';
+$list-ic-3-x: 139px;
+$list-ic-3-y: 0px;
+$list-ic-3-offset-x: -139px;
+$list-ic-3-offset-y: 0px;
+$list-ic-3-width: 16px;
+$list-ic-3-height: 12px;
+$list-ic-3-total-width: 351px;
+$list-ic-3-total-height: 24px;
+$list-ic-3-image: '../img/sprite-retina.png';
+$list-ic-3: (139px, 0px, -139px, 0px, 16px, 12px, 351px, 24px, '../img/sprite-retina.png', 'list-ic-3', );
+$list-ic-4-name: 'list-ic-4';
+$list-ic-4-x: 107px;
+$list-ic-4-y: 0px;
+$list-ic-4-offset-x: -107px;
+$list-ic-4-offset-y: 0px;
+$list-ic-4-width: 16px;
+$list-ic-4-height: 14px;
+$list-ic-4-total-width: 351px;
+$list-ic-4-total-height: 24px;
+$list-ic-4-image: '../img/sprite-retina.png';
+$list-ic-4: (107px, 0px, -107px, 0px, 16px, 14px, 351px, 24px, '../img/sprite-retina.png', 'list-ic-4', );
+$lsb-icon-1-name: 'lsb-icon-1';
+$lsb-icon-1-x: 303px;
+$lsb-icon-1-y: 0px;
+$lsb-icon-1-offset-x: -303px;
+$lsb-icon-1-offset-y: 0px;
+$lsb-icon-1-width: 24px;
+$lsb-icon-1-height: 24px;
+$lsb-icon-1-total-width: 351px;
+$lsb-icon-1-total-height: 24px;
+$lsb-icon-1-image: '../img/sprite-retina.png';
+$lsb-icon-1: (303px, 0px, -303px, 0px, 24px, 24px, 351px, 24px, '../img/sprite-retina.png', 'lsb-icon-1', );
+$lsb-icon-2-name: 'lsb-icon-2';
+$lsb-icon-2-x: 279px;
+$lsb-icon-2-y: 0px;
+$lsb-icon-2-offset-x: -279px;
+$lsb-icon-2-offset-y: 0px;
+$lsb-icon-2-width: 24px;
+$lsb-icon-2-height: 24px;
+$lsb-icon-2-total-width: 351px;
+$lsb-icon-2-total-height: 24px;
+$lsb-icon-2-image: '../img/sprite-retina.png';
+$lsb-icon-2: (279px, 0px, -279px, 0px, 24px, 24px, 351px, 24px, '../img/sprite-retina.png', 'lsb-icon-2', );
+$lsb-icon-3-name: 'lsb-icon-3';
+$lsb-icon-3-x: 255px;
+$lsb-icon-3-y: 0px;
+$lsb-icon-3-offset-x: -255px;
+$lsb-icon-3-offset-y: 0px;
+$lsb-icon-3-width: 24px;
+$lsb-icon-3-height: 16px;
+$lsb-icon-3-total-width: 351px;
+$lsb-icon-3-total-height: 24px;
+$lsb-icon-3-image: '../img/sprite-retina.png';
+$lsb-icon-3: (255px, 0px, -255px, 0px, 24px, 16px, 351px, 24px, '../img/sprite-retina.png', 'lsb-icon-3', );
+$lsb-icon-4-name: 'lsb-icon-4';
+$lsb-icon-4-x: 207px;
+$lsb-icon-4-y: 0px;
+$lsb-icon-4-offset-x: -207px;
+$lsb-icon-4-offset-y: 0px;
+$lsb-icon-4-width: 24px;
+$lsb-icon-4-height: 22px;
+$lsb-icon-4-total-width: 351px;
+$lsb-icon-4-total-height: 24px;
+$lsb-icon-4-image: '../img/sprite-retina.png';
+$lsb-icon-4: (207px, 0px, -207px, 0px, 24px, 22px, 351px, 24px, '../img/sprite-retina.png', 'lsb-icon-4', );
+$lsb-icon-5-name: 'lsb-icon-5';
+$lsb-icon-5-x: 327px;
+$lsb-icon-5-y: 0px;
+$lsb-icon-5-offset-x: -327px;
+$lsb-icon-5-offset-y: 0px;
+$lsb-icon-5-width: 24px;
+$lsb-icon-5-height: 24px;
+$lsb-icon-5-total-width: 351px;
+$lsb-icon-5-total-height: 24px;
+$lsb-icon-5-image: '../img/sprite-retina.png';
+$lsb-icon-5: (327px, 0px, -327px, 0px, 24px, 24px, 351px, 24px, '../img/sprite-retina.png', 'lsb-icon-5', );
+$lsb-icon-6-name: 'lsb-icon-6';
+$lsb-icon-6-x: 231px;
+$lsb-icon-6-y: 0px;
+$lsb-icon-6-offset-x: -231px;
+$lsb-icon-6-offset-y: 0px;
+$lsb-icon-6-width: 24px;
+$lsb-icon-6-height: 24px;
+$lsb-icon-6-total-width: 351px;
+$lsb-icon-6-total-height: 24px;
+$lsb-icon-6-image: '../img/sprite-retina.png';
+$lsb-icon-6: (231px, 0px, -231px, 0px, 24px, 24px, 351px, 24px, '../img/sprite-retina.png', 'lsb-icon-6', );
+$popup-arr-left-ic-name: 'popup-arr-left-ic';
+$popup-arr-left-ic-x: 61px;
+$popup-arr-left-ic-y: 0px;
+$popup-arr-left-ic-offset-x: -61px;
+$popup-arr-left-ic-offset-y: 0px;
+$popup-arr-left-ic-width: 9px;
+$popup-arr-left-ic-height: 8px;
+$popup-arr-left-ic-total-width: 351px;
+$popup-arr-left-ic-total-height: 24px;
+$popup-arr-left-ic-image: '../img/sprite-retina.png';
+$popup-arr-left-ic: (61px, 0px, -61px, 0px, 9px, 8px, 351px, 24px, '../img/sprite-retina.png', 'popup-arr-left-ic', );
+$ptv-play-lg-ic-name: 'ptv-play-lg-ic';
+$ptv-play-lg-ic-x: 80px;
+$ptv-play-lg-ic-y: 0px;
+$ptv-play-lg-ic-offset-x: -80px;
+$ptv-play-lg-ic-offset-y: 0px;
+$ptv-play-lg-ic-width: 11px;
+$ptv-play-lg-ic-height: 12px;
+$ptv-play-lg-ic-total-width: 351px;
+$ptv-play-lg-ic-total-height: 24px;
+$ptv-play-lg-ic-image: '../img/sprite-retina.png';
+$ptv-play-lg-ic: (80px, 0px, -80px, 0px, 11px, 12px, 351px, 24px, '../img/sprite-retina.png', 'ptv-play-lg-ic', );
+$ptv-play-sm-ic-name: 'ptv-play-sm-ic';
+$ptv-play-sm-ic-x: 15px;
+$ptv-play-sm-ic-y: 0px;
+$ptv-play-sm-ic-offset-x: -15px;
+$ptv-play-sm-ic-offset-y: 0px;
+$ptv-play-sm-ic-width: 5px;
+$ptv-play-sm-ic-height: 7px;
+$ptv-play-sm-ic-total-width: 351px;
+$ptv-play-sm-ic-total-height: 24px;
+$ptv-play-sm-ic-image: '../img/sprite-retina.png';
+$ptv-play-sm-ic: (15px, 0px, -15px, 0px, 5px, 7px, 351px, 24px, '../img/sprite-retina.png', 'ptv-play-sm-ic', );
+$search-close-ic-name: 'search-close-ic';
+$search-close-ic-x: 187px;
+$search-close-ic-y: 0px;
+$search-close-ic-offset-x: -187px;
+$search-close-ic-offset-y: 0px;
+$search-close-ic-width: 20px;
+$search-close-ic-height: 20px;
+$search-close-ic-total-width: 351px;
+$search-close-ic-total-height: 24px;
+$search-close-ic-image: '../img/sprite-retina.png';
+$search-close-ic: (187px, 0px, -187px, 0px, 20px, 20px, 351px, 24px, '../img/sprite-retina.png', 'search-close-ic', );
+$sub-menu-ic-name: 'sub-menu-ic';
+$sub-menu-ic-x: 70px;
+$sub-menu-ic-y: 0px;
+$sub-menu-ic-offset-x: -70px;
+$sub-menu-ic-offset-y: 0px;
+$sub-menu-ic-width: 10px;
+$sub-menu-ic-height: 10px;
+$sub-menu-ic-total-width: 351px;
+$sub-menu-ic-total-height: 24px;
+$sub-menu-ic-image: '../img/sprite-retina.png';
+$sub-menu-ic: (70px, 0px, -70px, 0px, 10px, 10px, 351px, 24px, '../img/sprite-retina.png', 'sub-menu-ic', );
+$arr-down-dark-ic-2x-name: 'arr-down-dark-ic@2x';
+$arr-down-dark-ic-2x-x: 0px;
+$arr-down-dark-ic-2x-y: 0px;
+$arr-down-dark-ic-2x-offset-x: 0px;
+$arr-down-dark-ic-2x-offset-y: 0px;
+$arr-down-dark-ic-2x-width: 10px;
+$arr-down-dark-ic-2x-height: 18px;
+$arr-down-dark-ic-2x-total-width: 702px;
+$arr-down-dark-ic-2x-total-height: 48px;
+$arr-down-dark-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-down-dark-ic-2x: (0px, 0px, 0px, 0px, 10px, 18px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-down-dark-ic@2x', );
+$arr-down-light-ic-2x-name: 'arr-down-light-ic@2x';
+$arr-down-light-ic-2x-x: 40px;
+$arr-down-light-ic-2x-y: 0px;
+$arr-down-light-ic-2x-offset-x: -40px;
+$arr-down-light-ic-2x-offset-y: 0px;
+$arr-down-light-ic-2x-width: 10px;
+$arr-down-light-ic-2x-height: 18px;
+$arr-down-light-ic-2x-total-width: 702px;
+$arr-down-light-ic-2x-total-height: 48px;
+$arr-down-light-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-down-light-ic-2x: (40px, 0px, -40px, 0px, 10px, 18px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-down-light-ic@2x', );
+$arr-left-dark-ic-2x-name: 'arr-left-dark-ic@2x';
+$arr-left-dark-ic-2x-x: 50px;
+$arr-left-dark-ic-2x-y: 0px;
+$arr-left-dark-ic-2x-offset-x: -50px;
+$arr-left-dark-ic-2x-offset-y: 0px;
+$arr-left-dark-ic-2x-width: 18px;
+$arr-left-dark-ic-2x-height: 10px;
+$arr-left-dark-ic-2x-total-width: 702px;
+$arr-left-dark-ic-2x-total-height: 48px;
+$arr-left-dark-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-left-dark-ic-2x: (50px, 0px, -50px, 0px, 18px, 10px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-left-dark-ic@2x', );
+$arr-left-light-ic-2x-name: 'arr-left-light-ic@2x';
+$arr-left-light-ic-2x-x: 68px;
+$arr-left-light-ic-2x-y: 0px;
+$arr-left-light-ic-2x-offset-x: -68px;
+$arr-left-light-ic-2x-offset-y: 0px;
+$arr-left-light-ic-2x-width: 18px;
+$arr-left-light-ic-2x-height: 10px;
+$arr-left-light-ic-2x-total-width: 702px;
+$arr-left-light-ic-2x-total-height: 48px;
+$arr-left-light-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-left-light-ic-2x: (68px, 0px, -68px, 0px, 18px, 10px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-left-light-ic@2x', );
+$arr-right-dark-ic-2x-name: 'arr-right-dark-ic@2x';
+$arr-right-dark-ic-2x-x: 86px;
+$arr-right-dark-ic-2x-y: 0px;
+$arr-right-dark-ic-2x-offset-x: -86px;
+$arr-right-dark-ic-2x-offset-y: 0px;
+$arr-right-dark-ic-2x-width: 18px;
+$arr-right-dark-ic-2x-height: 10px;
+$arr-right-dark-ic-2x-total-width: 702px;
+$arr-right-dark-ic-2x-total-height: 48px;
+$arr-right-dark-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-right-dark-ic-2x: (86px, 0px, -86px, 0px, 18px, 10px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-right-dark-ic@2x', );
+$arr-right-light-ic-2x-name: 'arr-right-light-ic@2x';
+$arr-right-light-ic-2x-x: 104px;
+$arr-right-light-ic-2x-y: 0px;
+$arr-right-light-ic-2x-offset-x: -104px;
+$arr-right-light-ic-2x-offset-y: 0px;
+$arr-right-light-ic-2x-width: 18px;
+$arr-right-light-ic-2x-height: 10px;
+$arr-right-light-ic-2x-total-width: 702px;
+$arr-right-light-ic-2x-total-height: 48px;
+$arr-right-light-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-right-light-ic-2x: (104px, 0px, -104px, 0px, 18px, 10px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-right-light-ic@2x', );
+$arr-up-dark-ic-2x-name: 'arr-up-dark-ic@2x';
+$arr-up-dark-ic-2x-x: 10px;
+$arr-up-dark-ic-2x-y: 0px;
+$arr-up-dark-ic-2x-offset-x: -10px;
+$arr-up-dark-ic-2x-offset-y: 0px;
+$arr-up-dark-ic-2x-width: 10px;
+$arr-up-dark-ic-2x-height: 18px;
+$arr-up-dark-ic-2x-total-width: 702px;
+$arr-up-dark-ic-2x-total-height: 48px;
+$arr-up-dark-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-up-dark-ic-2x: (10px, 0px, -10px, 0px, 10px, 18px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-up-dark-ic@2x', );
+$arr-up-light-ic-2x-name: 'arr-up-light-ic@2x';
+$arr-up-light-ic-2x-x: 20px;
+$arr-up-light-ic-2x-y: 0px;
+$arr-up-light-ic-2x-offset-x: -20px;
+$arr-up-light-ic-2x-offset-y: 0px;
+$arr-up-light-ic-2x-width: 10px;
+$arr-up-light-ic-2x-height: 18px;
+$arr-up-light-ic-2x-total-width: 702px;
+$arr-up-light-ic-2x-total-height: 48px;
+$arr-up-light-ic-2x-image: '../img/sprite-retina@2x.png';
+$arr-up-light-ic-2x: (20px, 0px, -20px, 0px, 10px, 18px, 702px, 48px, '../img/sprite-retina@2x.png', 'arr-up-light-ic@2x', );
+$cart-2-ic-2x-name: 'cart-2-ic@2x';
+$cart-2-ic-2x-x: 246px;
+$cart-2-ic-2x-y: 0px;
+$cart-2-ic-2x-offset-x: -246px;
+$cart-2-ic-2x-offset-y: 0px;
+$cart-2-ic-2x-width: 32px;
+$cart-2-ic-2x-height: 32px;
+$cart-2-ic-2x-total-width: 702px;
+$cart-2-ic-2x-total-height: 48px;
+$cart-2-ic-2x-image: '../img/sprite-retina@2x.png';
+$cart-2-ic-2x: (246px, 0px, -246px, 0px, 32px, 32px, 702px, 48px, '../img/sprite-retina@2x.png', 'cart-2-ic@2x', );
+$cart-ic-2x-name: 'cart-ic@2x';
+$cart-ic-2x-x: 310px;
+$cart-ic-2x-y: 0px;
+$cart-ic-2x-offset-x: -310px;
+$cart-ic-2x-offset-y: 0px;
+$cart-ic-2x-width: 32px;
+$cart-ic-2x-height: 32px;
+$cart-ic-2x-total-width: 702px;
+$cart-ic-2x-total-height: 48px;
+$cart-ic-2x-image: '../img/sprite-retina@2x.png';
+$cart-ic-2x: (310px, 0px, -310px, 0px, 32px, 32px, 702px, 48px, '../img/sprite-retina@2x.png', 'cart-ic@2x', );
+$list-ic-1-2x-name: 'list-ic-1@2x';
+$list-ic-1-2x-x: 342px;
+$list-ic-1-2x-y: 0px;
+$list-ic-1-2x-offset-x: -342px;
+$list-ic-1-2x-offset-y: 0px;
+$list-ic-1-2x-width: 32px;
+$list-ic-1-2x-height: 28px;
+$list-ic-1-2x-total-width: 702px;
+$list-ic-1-2x-total-height: 48px;
+$list-ic-1-2x-image: '../img/sprite-retina@2x.png';
+$list-ic-1-2x: (342px, 0px, -342px, 0px, 32px, 28px, 702px, 48px, '../img/sprite-retina@2x.png', 'list-ic-1@2x', );
+$list-ic-2-2x-name: 'list-ic-2@2x';
+$list-ic-2-2x-x: 182px;
+$list-ic-2-2x-y: 0px;
+$list-ic-2-2x-offset-x: -182px;
+$list-ic-2-2x-offset-y: 0px;
+$list-ic-2-2x-width: 32px;
+$list-ic-2-2x-height: 32px;
+$list-ic-2-2x-total-width: 702px;
+$list-ic-2-2x-total-height: 48px;
+$list-ic-2-2x-image: '../img/sprite-retina@2x.png';
+$list-ic-2-2x: (182px, 0px, -182px, 0px, 32px, 32px, 702px, 48px, '../img/sprite-retina@2x.png', 'list-ic-2@2x', );
+$list-ic-3-2x-name: 'list-ic-3@2x';
+$list-ic-3-2x-x: 278px;
+$list-ic-3-2x-y: 0px;
+$list-ic-3-2x-offset-x: -278px;
+$list-ic-3-2x-offset-y: 0px;
+$list-ic-3-2x-width: 32px;
+$list-ic-3-2x-height: 24px;
+$list-ic-3-2x-total-width: 702px;
+$list-ic-3-2x-total-height: 48px;
+$list-ic-3-2x-image: '../img/sprite-retina@2x.png';
+$list-ic-3-2x: (278px, 0px, -278px, 0px, 32px, 24px, 702px, 48px, '../img/sprite-retina@2x.png', 'list-ic-3@2x', );
+$list-ic-4-2x-name: 'list-ic-4@2x';
+$list-ic-4-2x-x: 214px;
+$list-ic-4-2x-y: 0px;
+$list-ic-4-2x-offset-x: -214px;
+$list-ic-4-2x-offset-y: 0px;
+$list-ic-4-2x-width: 32px;
+$list-ic-4-2x-height: 28px;
+$list-ic-4-2x-total-width: 702px;
+$list-ic-4-2x-total-height: 48px;
+$list-ic-4-2x-image: '../img/sprite-retina@2x.png';
+$list-ic-4-2x: (214px, 0px, -214px, 0px, 32px, 28px, 702px, 48px, '../img/sprite-retina@2x.png', 'list-ic-4@2x', );
+$lsb-icon-1-2x-name: 'lsb-icon-1@2x';
+$lsb-icon-1-2x-x: 606px;
+$lsb-icon-1-2x-y: 0px;
+$lsb-icon-1-2x-offset-x: -606px;
+$lsb-icon-1-2x-offset-y: 0px;
+$lsb-icon-1-2x-width: 48px;
+$lsb-icon-1-2x-height: 48px;
+$lsb-icon-1-2x-total-width: 702px;
+$lsb-icon-1-2x-total-height: 48px;
+$lsb-icon-1-2x-image: '../img/sprite-retina@2x.png';
+$lsb-icon-1-2x: (606px, 0px, -606px, 0px, 48px, 48px, 702px, 48px, '../img/sprite-retina@2x.png', 'lsb-icon-1@2x', );
+$lsb-icon-2-2x-name: 'lsb-icon-2@2x';
+$lsb-icon-2-2x-x: 558px;
+$lsb-icon-2-2x-y: 0px;
+$lsb-icon-2-2x-offset-x: -558px;
+$lsb-icon-2-2x-offset-y: 0px;
+$lsb-icon-2-2x-width: 48px;
+$lsb-icon-2-2x-height: 48px;
+$lsb-icon-2-2x-total-width: 702px;
+$lsb-icon-2-2x-total-height: 48px;
+$lsb-icon-2-2x-image: '../img/sprite-retina@2x.png';
+$lsb-icon-2-2x: (558px, 0px, -558px, 0px, 48px, 48px, 702px, 48px, '../img/sprite-retina@2x.png', 'lsb-icon-2@2x', );
+$lsb-icon-3-2x-name: 'lsb-icon-3@2x';
+$lsb-icon-3-2x-x: 510px;
+$lsb-icon-3-2x-y: 0px;
+$lsb-icon-3-2x-offset-x: -510px;
+$lsb-icon-3-2x-offset-y: 0px;
+$lsb-icon-3-2x-width: 48px;
+$lsb-icon-3-2x-height: 32px;
+$lsb-icon-3-2x-total-width: 702px;
+$lsb-icon-3-2x-total-height: 48px;
+$lsb-icon-3-2x-image: '../img/sprite-retina@2x.png';
+$lsb-icon-3-2x: (510px, 0px, -510px, 0px, 48px, 32px, 702px, 48px, '../img/sprite-retina@2x.png', 'lsb-icon-3@2x', );
+$lsb-icon-4-2x-name: 'lsb-icon-4@2x';
+$lsb-icon-4-2x-x: 414px;
+$lsb-icon-4-2x-y: 0px;
+$lsb-icon-4-2x-offset-x: -414px;
+$lsb-icon-4-2x-offset-y: 0px;
+$lsb-icon-4-2x-width: 48px;
+$lsb-icon-4-2x-height: 44px;
+$lsb-icon-4-2x-total-width: 702px;
+$lsb-icon-4-2x-total-height: 48px;
+$lsb-icon-4-2x-image: '../img/sprite-retina@2x.png';
+$lsb-icon-4-2x: (414px, 0px, -414px, 0px, 48px, 44px, 702px, 48px, '../img/sprite-retina@2x.png', 'lsb-icon-4@2x', );
+$lsb-icon-5-2x-name: 'lsb-icon-5@2x';
+$lsb-icon-5-2x-x: 654px;
+$lsb-icon-5-2x-y: 0px;
+$lsb-icon-5-2x-offset-x: -654px;
+$lsb-icon-5-2x-offset-y: 0px;
+$lsb-icon-5-2x-width: 48px;
+$lsb-icon-5-2x-height: 48px;
+$lsb-icon-5-2x-total-width: 702px;
+$lsb-icon-5-2x-total-height: 48px;
+$lsb-icon-5-2x-image: '../img/sprite-retina@2x.png';
+$lsb-icon-5-2x: (654px, 0px, -654px, 0px, 48px, 48px, 702px, 48px, '../img/sprite-retina@2x.png', 'lsb-icon-5@2x', );
+$lsb-icon-6-2x-name: 'lsb-icon-6@2x';
+$lsb-icon-6-2x-x: 462px;
+$lsb-icon-6-2x-y: 0px;
+$lsb-icon-6-2x-offset-x: -462px;
+$lsb-icon-6-2x-offset-y: 0px;
+$lsb-icon-6-2x-width: 48px;
+$lsb-icon-6-2x-height: 48px;
+$lsb-icon-6-2x-total-width: 702px;
+$lsb-icon-6-2x-total-height: 48px;
+$lsb-icon-6-2x-image: '../img/sprite-retina@2x.png';
+$lsb-icon-6-2x: (462px, 0px, -462px, 0px, 48px, 48px, 702px, 48px, '../img/sprite-retina@2x.png', 'lsb-icon-6@2x', );
+$popup-arr-left-ic-2x-name: 'popup-arr-left-ic@2x';
+$popup-arr-left-ic-2x-x: 122px;
+$popup-arr-left-ic-2x-y: 0px;
+$popup-arr-left-ic-2x-offset-x: -122px;
+$popup-arr-left-ic-2x-offset-y: 0px;
+$popup-arr-left-ic-2x-width: 18px;
+$popup-arr-left-ic-2x-height: 16px;
+$popup-arr-left-ic-2x-total-width: 702px;
+$popup-arr-left-ic-2x-total-height: 48px;
+$popup-arr-left-ic-2x-image: '../img/sprite-retina@2x.png';
+$popup-arr-left-ic-2x: (122px, 0px, -122px, 0px, 18px, 16px, 702px, 48px, '../img/sprite-retina@2x.png', 'popup-arr-left-ic@2x', );
+$ptv-play-lg-ic-2x-name: 'ptv-play-lg-ic@2x';
+$ptv-play-lg-ic-2x-x: 160px;
+$ptv-play-lg-ic-2x-y: 0px;
+$ptv-play-lg-ic-2x-offset-x: -160px;
+$ptv-play-lg-ic-2x-offset-y: 0px;
+$ptv-play-lg-ic-2x-width: 22px;
+$ptv-play-lg-ic-2x-height: 24px;
+$ptv-play-lg-ic-2x-total-width: 702px;
+$ptv-play-lg-ic-2x-total-height: 48px;
+$ptv-play-lg-ic-2x-image: '../img/sprite-retina@2x.png';
+$ptv-play-lg-ic-2x: (160px, 0px, -160px, 0px, 22px, 24px, 702px, 48px, '../img/sprite-retina@2x.png', 'ptv-play-lg-ic@2x', );
+$ptv-play-sm-ic-2x-name: 'ptv-play-sm-ic@2x';
+$ptv-play-sm-ic-2x-x: 30px;
+$ptv-play-sm-ic-2x-y: 0px;
+$ptv-play-sm-ic-2x-offset-x: -30px;
+$ptv-play-sm-ic-2x-offset-y: 0px;
+$ptv-play-sm-ic-2x-width: 10px;
+$ptv-play-sm-ic-2x-height: 14px;
+$ptv-play-sm-ic-2x-total-width: 702px;
+$ptv-play-sm-ic-2x-total-height: 48px;
+$ptv-play-sm-ic-2x-image: '../img/sprite-retina@2x.png';
+$ptv-play-sm-ic-2x: (30px, 0px, -30px, 0px, 10px, 14px, 702px, 48px, '../img/sprite-retina@2x.png', 'ptv-play-sm-ic@2x', );
+$search-close-ic-2x-name: 'search-close-ic@2x';
+$search-close-ic-2x-x: 374px;
+$search-close-ic-2x-y: 0px;
+$search-close-ic-2x-offset-x: -374px;
+$search-close-ic-2x-offset-y: 0px;
+$search-close-ic-2x-width: 40px;
+$search-close-ic-2x-height: 40px;
+$search-close-ic-2x-total-width: 702px;
+$search-close-ic-2x-total-height: 48px;
+$search-close-ic-2x-image: '../img/sprite-retina@2x.png';
+$search-close-ic-2x: (374px, 0px, -374px, 0px, 40px, 40px, 702px, 48px, '../img/sprite-retina@2x.png', 'search-close-ic@2x', );
+$sub-menu-ic-2x-name: 'sub-menu-ic@2x';
+$sub-menu-ic-2x-x: 140px;
+$sub-menu-ic-2x-y: 0px;
+$sub-menu-ic-2x-offset-x: -140px;
+$sub-menu-ic-2x-offset-y: 0px;
+$sub-menu-ic-2x-width: 20px;
+$sub-menu-ic-2x-height: 20px;
+$sub-menu-ic-2x-total-width: 702px;
+$sub-menu-ic-2x-total-height: 48px;
+$sub-menu-ic-2x-image: '../img/sprite-retina@2x.png';
+$sub-menu-ic-2x: (140px, 0px, -140px, 0px, 20px, 20px, 702px, 48px, '../img/sprite-retina@2x.png', 'sub-menu-ic@2x', );
+$spritesheet-width: 351px;
+$spritesheet-height: 24px;
+$spritesheet-image: '../img/sprite-retina.png';
+$spritesheet-sprites: ($arr-down-dark-ic, $arr-down-light-ic, $arr-left-dark-ic, $arr-left-light-ic, $arr-right-dark-ic, $arr-right-light-ic, $arr-up-dark-ic, $arr-up-light-ic, $cart-2-ic, $cart-ic, $list-ic-1, $list-ic-2, $list-ic-3, $list-ic-4, $lsb-icon-1, $lsb-icon-2, $lsb-icon-3, $lsb-icon-4, $lsb-icon-5, $lsb-icon-6, $popup-arr-left-ic, $ptv-play-lg-ic, $ptv-play-sm-ic, $search-close-ic, $sub-menu-ic, );
+$spritesheet: (351px, 24px, '../img/sprite-retina.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 702px;
+$retina-spritesheet-height: 48px;
+$retina-spritesheet-image: '../img/sprite-retina@2x.png';
+$retina-spritesheet-sprites: ($arr-down-dark-ic-2x, $arr-down-light-ic-2x, $arr-left-dark-ic-2x, $arr-left-light-ic-2x, $arr-right-dark-ic-2x, $arr-right-light-ic-2x, $arr-up-dark-ic-2x, $arr-up-light-ic-2x, $cart-2-ic-2x, $cart-ic-2x, $list-ic-1-2x, $list-ic-2-2x, $list-ic-3-2x, $list-ic-4-2x, $lsb-icon-1-2x, $lsb-icon-2-2x, $lsb-icon-3-2x, $lsb-icon-4-2x, $lsb-icon-5-2x, $lsb-icon-6-2x, $popup-arr-left-ic-2x, $ptv-play-lg-ic-2x, $ptv-play-sm-ic-2x, $search-close-ic-2x, $sub-menu-ic-2x, );
+$retina-spritesheet: (702px, 48px, '../img/sprite-retina@2x.png', $retina-spritesheet-sprites, );
+
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+$arr-down-dark-ic-group-name: 'arr-down-dark-ic';
+$arr-down-dark-ic-group: ('arr-down-dark-ic', $arr-down-dark-ic, $arr-down-dark-ic-2x, );
+$arr-down-light-ic-group-name: 'arr-down-light-ic';
+$arr-down-light-ic-group: ('arr-down-light-ic', $arr-down-light-ic, $arr-down-light-ic-2x, );
+$arr-left-dark-ic-group-name: 'arr-left-dark-ic';
+$arr-left-dark-ic-group: ('arr-left-dark-ic', $arr-left-dark-ic, $arr-left-dark-ic-2x, );
+$arr-left-light-ic-group-name: 'arr-left-light-ic';
+$arr-left-light-ic-group: ('arr-left-light-ic', $arr-left-light-ic, $arr-left-light-ic-2x, );
+$arr-right-dark-ic-group-name: 'arr-right-dark-ic';
+$arr-right-dark-ic-group: ('arr-right-dark-ic', $arr-right-dark-ic, $arr-right-dark-ic-2x, );
+$arr-right-light-ic-group-name: 'arr-right-light-ic';
+$arr-right-light-ic-group: ('arr-right-light-ic', $arr-right-light-ic, $arr-right-light-ic-2x, );
+$arr-up-dark-ic-group-name: 'arr-up-dark-ic';
+$arr-up-dark-ic-group: ('arr-up-dark-ic', $arr-up-dark-ic, $arr-up-dark-ic-2x, );
+$arr-up-light-ic-group-name: 'arr-up-light-ic';
+$arr-up-light-ic-group: ('arr-up-light-ic', $arr-up-light-ic, $arr-up-light-ic-2x, );
+$cart-2-ic-group-name: 'cart-2-ic';
+$cart-2-ic-group: ('cart-2-ic', $cart-2-ic, $cart-2-ic-2x, );
+$cart-ic-group-name: 'cart-ic';
+$cart-ic-group: ('cart-ic', $cart-ic, $cart-ic-2x, );
+$list-ic-1-group-name: 'list-ic-1';
+$list-ic-1-group: ('list-ic-1', $list-ic-1, $list-ic-1-2x, );
+$list-ic-2-group-name: 'list-ic-2';
+$list-ic-2-group: ('list-ic-2', $list-ic-2, $list-ic-2-2x, );
+$list-ic-3-group-name: 'list-ic-3';
+$list-ic-3-group: ('list-ic-3', $list-ic-3, $list-ic-3-2x, );
+$list-ic-4-group-name: 'list-ic-4';
+$list-ic-4-group: ('list-ic-4', $list-ic-4, $list-ic-4-2x, );
+$lsb-icon-1-group-name: 'lsb-icon-1';
+$lsb-icon-1-group: ('lsb-icon-1', $lsb-icon-1, $lsb-icon-1-2x, );
+$lsb-icon-2-group-name: 'lsb-icon-2';
+$lsb-icon-2-group: ('lsb-icon-2', $lsb-icon-2, $lsb-icon-2-2x, );
+$lsb-icon-3-group-name: 'lsb-icon-3';
+$lsb-icon-3-group: ('lsb-icon-3', $lsb-icon-3, $lsb-icon-3-2x, );
+$lsb-icon-4-group-name: 'lsb-icon-4';
+$lsb-icon-4-group: ('lsb-icon-4', $lsb-icon-4, $lsb-icon-4-2x, );
+$lsb-icon-5-group-name: 'lsb-icon-5';
+$lsb-icon-5-group: ('lsb-icon-5', $lsb-icon-5, $lsb-icon-5-2x, );
+$lsb-icon-6-group-name: 'lsb-icon-6';
+$lsb-icon-6-group: ('lsb-icon-6', $lsb-icon-6, $lsb-icon-6-2x, );
+$popup-arr-left-ic-group-name: 'popup-arr-left-ic';
+$popup-arr-left-ic-group: ('popup-arr-left-ic', $popup-arr-left-ic, $popup-arr-left-ic-2x, );
+$ptv-play-lg-ic-group-name: 'ptv-play-lg-ic';
+$ptv-play-lg-ic-group: ('ptv-play-lg-ic', $ptv-play-lg-ic, $ptv-play-lg-ic-2x, );
+$ptv-play-sm-ic-group-name: 'ptv-play-sm-ic';
+$ptv-play-sm-ic-group: ('ptv-play-sm-ic', $ptv-play-sm-ic, $ptv-play-sm-ic-2x, );
+$search-close-ic-group-name: 'search-close-ic';
+$search-close-ic-group: ('search-close-ic', $search-close-ic, $search-close-ic-2x, );
+$sub-menu-ic-group-name: 'sub-menu-ic';
+$sub-menu-ic-group: ('sub-menu-ic', $sub-menu-ic, $sub-menu-ic-2x, );
+$retina-groups: ($arr-down-dark-ic-group, $arr-down-light-ic-group, $arr-left-dark-ic-group, $arr-left-light-ic-group, $arr-right-dark-ic-group, $arr-right-light-ic-group, $arr-up-dark-ic-group, $arr-up-light-ic-group, $cart-2-ic-group, $cart-ic-group, $list-ic-1-group, $list-ic-2-group, $list-ic-3-group, $list-ic-4-group, $lsb-icon-1-group, $lsb-icon-2-group, $lsb-icon-3-group, $lsb-icon-4-group, $lsb-icon-5-group, $lsb-icon-6-group, $popup-arr-left-ic-group, $ptv-play-lg-ic-group, $ptv-play-sm-ic-group, $search-close-ic-group, $sub-menu-ic-group, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}

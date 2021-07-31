@@ -1,0 +1,108 @@
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font: 13px/23px $main-font;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+a,
+#{$all-buttons},
+#{$all-text-inputs} {
+   outline: 0;
+   appearance: none;
+}
+
+.inner-wrapper {
+    background: #16171a;
+    position: relative;
+    padding: 0 0 0 58px;
+    z-index: 1;
+    @include media($xs) {
+       padding-left: 0;
+    }
+}
+
+.left-sticky-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58px;
+    height: 100%;
+    overflow-y: auto;
+    @include media($xs) {
+       display: none;
+    }
+}
+
+.main-content {
+    background: #ebebeb;
+    padding: 0 0 28px;
+    overflow: hidden;
+}
+
+.video-content {
+    background: #232529;
+    margin: 0 0 -28px;
+    padding: 0 0 28px;
+    overflow: hidden;
+}
+
+.smp-page {
+    padding: 50px 0 0;
+}
+
+.main-footer {
+    background: #1f2124;
+    .bottom-part {
+        .ft-logo {
+            @include span-columns(2.26);
+            @include pad(0 15px);
+            @include media($sm) {
+                @include span-columns(3);
+            }
+            @include media($mb-pt) {
+                @include span-columns(12);
+                text-align: center;
+                a {
+                    display: inline-block;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        .ft-about {
+            @include span-columns(6.66);
+            @include pad(0 15px);
+            @include media($sm) {
+                @include span-columns(9);
+            }
+            @include media($mb-pt) {
+                @include span-columns(12);
+                text-align: center;
+            }
+        }
+        .ft-social {
+            @include span-columns(3.08);
+            @include pad(0 15px);
+            @include media($sm) {
+                @include span-columns(9);
+                float: right;
+                margin-top: 25px;
+                .ft-social-list {
+                    float: none;
+                }
+            }
+            @include media($mb-pt) {
+                @include span-columns(12);
+                text-align: center;
+                .ft-social-list {
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

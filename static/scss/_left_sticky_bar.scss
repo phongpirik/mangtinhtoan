@@ -1,0 +1,60 @@
+.left-sticky-bar {
+    &.sticky {
+        position: fixed;
+        top: 65px;
+        @include media($sm) {
+            top: 0;
+        }
+    }
+}
+
+.lsb-list {
+    a {
+        color: #c1c1c1;
+        display: block;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+        padding: 12px 5px 10px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover,
+        &.active {
+            background: #1f2124;
+        }
+    }
+}
+
+.lsb-icon-1,
+.lsb-icon-2,
+.lsb-icon-3,
+.lsb-icon-4,
+.lsb-icon-5,
+.lsb-icon-6 {
+    display: inline-block;
+}
+
+.lsb-icon-1 {
+    @include retina-sprite($lsb-icon-1-group);
+}
+
+.lsb-icon-2 {
+    @include retina-sprite($lsb-icon-2-group);
+}
+
+.lsb-icon-3 {
+    @include retina-sprite($lsb-icon-3-group);
+}
+
+.lsb-icon-4 {
+    @include retina-sprite($lsb-icon-4-group);
+}
+
+.lsb-icon-5 {
+    @include retina-sprite($lsb-icon-5-group);
+}
+
+.lsb-icon-6 {
+    @include retina-sprite($lsb-icon-6-group);
+}
